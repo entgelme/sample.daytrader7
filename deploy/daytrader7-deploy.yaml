@@ -5,7 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "3"
 spec:
-  applicationImage: 'docker.io/dguinan/sample-daytrader7:latest'
+  applicationImage: 'default-route-openshift-image-registry.apps.cp4bamig1i.cp.fyre.ibm.com/bb/sample-daytrader7:latest'
   route:
     path: /daytrader
   expose: true
