@@ -40,7 +40,7 @@ spec:
               protocol: TCP
           imagePullPolicy: Always
           terminationMessagePolicy: File
-          image: docker.io/tamdocker/trade7db:latest
+          image: default-route-openshift-image-registry.apps.cp4bamig1i.cp.fyre.ibm.com/bb-dt-target/trade7db:latest
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst

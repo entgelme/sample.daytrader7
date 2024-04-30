@@ -17,7 +17,6 @@ spec:
     path: /daytrader
   expose: true
   manageTLS: true
-  pullPolicy: Always
   serviceAccount:
     mountToken: true
   replicas: 1
