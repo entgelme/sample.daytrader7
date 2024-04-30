@@ -5,10 +5,22 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "3"
 spec:
+  license:
+    accept: true
+    edition: IBM WebSphere Application Server
+    productEntitlementSource: Standalone
+  applicationVersion: '1.0'
   applicationImage: 'default-route-openshift-image-registry.apps.cp4bamig1i.cp.fyre.ibm.com/bb/sample-daytrader7:latest'
   route:
+    insecureEdgeTerminationPolicy: None
+    termination: edge
     path: /daytrader
   expose: true
+  manageTLS: true
+  pullPolicy: Always
+  serviceAccount:
+    mountToken: true
+  replicas: 1
   service:
     portName: liveness-port
     port: 9082
