@@ -10,7 +10,7 @@ spec:
     edition: IBM WebSphere Application Server
     productEntitlementSource: Standalone
   applicationVersion: '1.0'
-  applicationImage: 'default-route-openshift-image-registry.apps.cp4bamig1i.cp.fyre.ibm.com/bb/sample-daytrader7:latest'
+  applicationImage: 'image-registry.openshift-image-registry.svc:5000/bb-dt-target/sample-daytrader7:latest'
   route:
     insecureEdgeTerminationPolicy: None
     termination: edge
