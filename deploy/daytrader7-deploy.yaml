@@ -17,8 +17,6 @@ spec:
     path: /daytrader
   expose: true
   manageTLS: true
-  serviceAccount:
-    mountToken: true
   replicas: 1
   service:
     portName: liveness-port
