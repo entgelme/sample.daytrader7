@@ -1,5 +1,5 @@
 apiVersion: apps.openliberty.io/v1beta2
-kind: OpenLibertyApplication
+kind: WebSphereLibertyApplication
 metadata:
   name: daytrader7
   annotations:
